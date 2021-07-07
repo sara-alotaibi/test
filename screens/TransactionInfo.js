@@ -1,9 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
 
-const IMG_URI =
-  'https://cdn.pixabay.com/photo/2020/05/26/15/42/eagle-5223559_960_720.jpg';
-
 function TransactionInfo(props) {
 const {main,sub,header,content} = props;
 

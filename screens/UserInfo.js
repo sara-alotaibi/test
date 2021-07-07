@@ -1,5 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 const IMG_URI =
   'https://cdn.pixabay.com/photo/2020/05/26/15/42/eagle-5223559_960_720.jpg';
@@ -31,7 +33,14 @@ const styles = StyleSheet.create({
           <Text style={styles.baseText}>
             {header}
           </Text>
+          <View style={{     justifyContent: 'space-between',
+                             flexDirection: 'row', }}>
           <Text style={styles.innerText}> {content} </Text>
+          { props.editIcon?
+           <FontAwesomeIcon style={{color:'grey'}} icon={ faEdit } /> : <Text> </Text>
+           }
+          </View>
+
           <View
             style={{
               borderBottomColor: '#e0e0e0',

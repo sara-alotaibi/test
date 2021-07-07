@@ -10,7 +10,7 @@ function Profile(props) {
   return (
     <View>
            <ProfileHead />
-           <UserInfo main="grey" sub="grey" header="IBAN" content="SA34 3456 4556 3464 4566"/>
+           <UserInfo main="grey" sub="grey" header="IBAN" content="SA34 3456 4556 3464 4566" editIcon={true} />
            <UserInfo main="grey" sub="black" header="Relationship" content="Friend"/>
            <UserInfo main="grey" sub="black" header="Nickname" content="Sar"/>
            <TransactionInfo main="grey" sub="black" header="Purpose of Transaction" content="Bills"/>
